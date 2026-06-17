@@ -24,3 +24,11 @@ class itemdopedido:
         self.prato=prato
         self.valor_prato=valor_prato
         self.quantidade=quantidade
+
+c1= cliente("Roberto", date(1984, 4, 23), "9018867")
+pra1= prato("Lasanha", ["massa", "carne"], "Assa a lasanha no forno", 200.10)
+pra2= prato("Pizza", ["carne", "massa"], "Pizza nhum nhum", 40)
+it1= (pra1, 200.10, 1)
+it2= (pra2, 40, 2)
+pe1= pedido(date(2021, 5, 12), 2, c1, [it1, it2])
+
