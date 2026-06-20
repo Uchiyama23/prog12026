@@ -1,0 +1,24 @@
+import unittest
+
+from oficinatop import *
+#oficinatop = nome do arquivo de codigo para testar
+
+v1= carro(4,"rosa", "UCHIYAMAKOKI123", 6)
+p1= Pessoa("Jorge", "40028922", "31/02/1703")
+m1= mecanico(p1)
+p2= Pessoa("Roje", "3343333", "12/09/1678")
+c1= cliente(p2, "roje@gmail.com")
+s1= servico("arrumo a roda entalada", 10)
+sr1= servicorealizado(s1, m1)
+os= ordemservico("30/03/1359", v1, "02/03/1359", c1, 2, sr1)
+#declaracoes para serem testadas, sendo importadas da oficinatop
+
+class testeservico (unittest.TestCase):
+    def teste_servicorealizado(self):
+        p = Pessoa("Jorge", "40028922", "31/02/1703")
+        se = servico("arrumo a roda entalada", 10) 
+        m = mecanico(p)
+        se2 = servicorealizado(se, m) 
+        self.assertEqual(se2.servico.descricao, "arrumo a roda entalada")
+
+unittest.main()
