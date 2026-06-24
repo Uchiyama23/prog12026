@@ -9,10 +9,10 @@ pygame.init()
 background= Actor('inferno.png')
 
 charlie= Actor('charlie.png')
-charlie.pos= (700,450)
+charlie.pos= (550,250)
 
 jeremias= Actor('jeremy.png')
-jeremias.pos=(550,500)
+jeremias.pos=(350,250)
 
 WIDTH = 800
 HEIGHT = 400
@@ -32,10 +32,9 @@ def update():
         jeremias.x -= 5
     if keyboard.right:
         jeremias.x += 5
-    if jeremias.colliderect(charlie):
+    while jeremias.colliderect(charlie):
         print("oi")
-        x= jeremias.pos
-        jeremias=Actor('jeremiasaberto.png')  
-        jeremias.pos= x
+        jeremias=Actor('jeremiasaberto.png')
+
 
 pgzrun.go()
