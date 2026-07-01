@@ -21,9 +21,11 @@ def draw():
     background.draw()
     jeremias.draw()
     charlie.draw()
-
+i=0
 def update():
     global jeremias
+    global charlie
+    global i
     if keyboard.up:
         jeremias.y-= 5
     if keyboard.down:
@@ -32,9 +34,23 @@ def update():
         jeremias.x -= 5
     if keyboard.right:
         jeremias.x += 5
-    while jeremias.colliderect(charlie):
+    if jeremias.colliderect(charlie):
+        y=jeremias.pos
         print("oi")
         jeremias=Actor('jeremiasaberto.png')
+        jeremias.pos=y
+        i= i+1
+    else: 
+        y=jeremias.pos
+        print("ai")
+        jeremias=Actor('jeremy.png')
+        jeremias.pos=y
+    if i>3:
+        y= charlie.pos
+        charlie= Actor('charlieejere.png')
+        jeremias= Actor(0)
+        charlie.pos=y
+
 
 
 pgzrun.go()
