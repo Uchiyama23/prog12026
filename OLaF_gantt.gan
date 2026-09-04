@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="OLaF" company="" webLink="http://" view-date="2027-04-11" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.3.3309" locale="pt_BR">
+    <description/>
+    <view zooming-state="default:4" id="gantt-chart">
+        <field id="tpd3" name="Nome" width="200" order="0"/>
+        <field id="tpd4" name="Data inicial" width="75" order="1"/>
+        <field id="tpd5" name="Data final" width="75" order="2"/>
+        <field id="tpd15" name="Notas" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <option id="color.recent"><![CDATA[#ff99cc #ff9999 #99ccff #6699ff]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nome" width="210" order="0"/>
+        <field id="1" name="Função" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="e25ac559ff1043a0b97abf74570c78c3" name="Tela de Login" color="#99ccff" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2027-02-19" duration="14" complete="0" expand="true"/>
+        <task id="1" uid="9b90b12c746e49f4b5985249c30c16f8" name="Tela inicial" color="#99ccff" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2027-02-19" duration="15" complete="0" expand="true"/>
+        <task id="2" uid="396bd9e4e7e147c5860b5226f14521cf" name="Tela de cadastro" color="#99ccff" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2027-03-12" duration="14" complete="0" expand="true"/>
+        <task id="3" uid="467bca719fd541f7a5580b1389221be4" name="Tela de busca" color="#99ccff" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2027-03-12" duration="7" complete="0" priority="3" expand="true"/>
+        <task id="4" uid="a1b8d18ea15f47cf88c402366d23d2d9" name="Tela de cadastro de experimentos" color="#99ccff" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2027-03-12" duration="14" complete="0" expand="true"/>
+        <task id="5" uid="6e9a9b5869294e3bba3b82d225fe17b1" name="Tela de cadastro de equipamentos" color="#99ccff" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2027-03-12" duration="14" complete="0" expand="true"/>
+        <task id="6" uid="597b861498bf4dfd83a22e2474c39cbc" name="Tela de acesso de equipamentos" color="#99ccff" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2027-03-31" duration="14" complete="0" expand="true"/>
+        <task id="7" uid="80d3271190c742a282d32a23a1cf7f0f" name="Tela de acesso de experimentos" color="#99ccff" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2027-03-31" duration="14" complete="0" expand="true"/>
+        <task id="8" uid="6c88f68ec1c040018b9522aa9948f613" name="Tela de recuperação de senha" color="#99ccff" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2027-04-19" duration="7" complete="0" expand="true"/>
+        <task id="9" uid="ca0b9949235a48f0bd13a0f1c665cf24" name="Tela de configuração da conta" color="#99ccff" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2027-04-19" duration="7" complete="0" expand="true"/>
+        <task id="10" uid="0754d9d236ea47a28f10e585873101ea" name="Banco de dados" color="#ff99cc" shape="1,0,0,0,1,0,0,0,1,0,0,0,1,1,1,1" meeting="false" start="2027-04-19" duration="28" complete="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
